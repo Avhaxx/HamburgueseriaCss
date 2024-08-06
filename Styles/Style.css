@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#44270f ;
+
+
+}
+.hero{
+    height: 100vh; 
+    background-image: url(../istockphoto-1294635395-612x612.jpg);
+}
+.hero_header{
+    display: flex;
+    justify-content:space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+
+}
+.hero_header .logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    font-weight: 5000;
+    letter-spacing: 3px;
+
+}
+.header_right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap:1rem
+
+}
+
+.header_right p {
+    font-family: 'Lato', sans-serif;
+
+} 
+
+.header_right .menu{
+    font-weight: 300;
+    font-family: 'Bebas Neue', sans-serif;
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    gap: 2rem;
+    letter-spacing: 2px;
+
+}
+.hero_main{
+    display: flex;
+    padding-inline: 7rem ;
+
+}
+ .hero_main > div {
+    flex: 1;
+
+ } /*para tomar solos los hijos directos de hero_main y no afectar a todos lso div */
+ 
+ .hero_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    
+ }
+ .hero_text h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    border: 2px dashed #44270f;
+    width: max-content;
+    padding: 0.6rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem ;
+ }
+ .hero_text h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 5rem;
+    line-height: 1;
+    text-shadow: 4px 4px 0 white;
+
+ }
+ .hero_text h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 4px 4px 0 white;
+
+
+ }
+.hero_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block:3rem ;
+    position: relative;
+
+}
+
+ .hero_img img {
+    max-width: 1000px;
+ }
+ .sale{
+    position: absolute;
+    bottom:5rem;
+    left: -2rem;
+    background-color:rgb(199, 13, 13) ;
+    width: 100px;
+    height: 100px;
+    padding: 3.6rem;
+    border-radius: 50%;
+    border: 2px dashed white;
+    outline: 5px solid rgb(199, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+
+ }
+
+.price{
+    color: white;
+    
+}
+.only{
+    color: white;
+}
+.price{
+    font-size: 2.7rem;
+    line-height: 1;
+
+
+}
+.only{
+    font-size: 2.4rem;
+    line-height: 1;
+    letter-spacing: 3px;
+}
+
+
+
+/*************** GRID*****************************************/
+
+.grid{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:1fr 1fr ;
+    grid-template-areas: 
+        "item1 item2"
+        "item1 item3"
+    ;
+    gap: 2rem ;
+}
+.grid_item{
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    
+
+}
+.grid_item h5,
+.grid_item h4{
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 300;
+
+}
+.grid_item h5{
+    font-size: 1.2rem;
+}
+
+.grid_item h4{
+    font-size: 1.6rem;
+    
+}
+
+
+
+.grid_item1{
+    grid-area: item1;
+    background-image:url("../burguer-week-santa-cruz-.jpg") ;
+    height: 400px;
+
+}
+
+
+.grid_item2{
+    grid-area: item2;
+    background-image:url("../275325112_3184340181855356_5512877525897050970_n.jpg") ;
+}
+
+
+.grid_item3{
+    grid-area: item3;
+    background-image:url("../hamburguesas-elle-gourmet-64d229000db87.jpg") ;
+}
+
+/***             ENJOY **************************************/
+.enjoy{
+    padding: 6rem;
+    padding-top: 0;
+}
+.titles{
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.titles h4{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    background-color: #c9b209;
+    padding: .5rem 1rem .25rem 1rem;
+    
+    
+}
+.titles h2{
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1px;
+
+}
+.titles p{
+    font-family: 'Lato', sans-serif;
+
+}
+/* Toda la carta */ 
+.cards {
+    display : flex ;
+
+}
+/* cada una de las cartas */
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    max-width: 100%;
+}
